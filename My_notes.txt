@@ -1,0 +1,15 @@
+# Escribimos en un archivo de texto
+with open('my_notes.txt', 'w') as file:
+    # Escribimos líneas de notas personales en el archivo
+    file.write("Hoy aprendí sobre la manipulación de archivos en Python.\n")
+    file.write("Es interesante cómo se pueden leer y escribir datos.\n")
+    file.write("Quiero seguir practicando más sobre este tema.\n")
+
+# Leemos el archivo de texto
+with open('my_notes.txt', 'r') as file:
+    # Leemos el contenido línea por línea
+    for line in file:
+        # Mostramos cada línea leída en la consola
+        print(line.strip())  # Usamos strip() para quitar los saltos de línea al final
+
+# El archivo se cierra automáticamente al salir del bloque 'with'
